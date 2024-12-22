@@ -1,0 +1,162 @@
+.formatedde-hero {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Matches the height of the Hero component */
+  overflow: hidden;
+}
+
+.formatedde-hero-mid {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  position: relative;
+}
+
+.formatedde-hero-mid h1 {
+  padding-top: 4rem !important;
+}
+
+.formatedde-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formatedde-hero-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.formatedde-hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: white;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.formatedde-img {
+  width: 100%; /* Ensures the image spans the full width */
+  height: 100%; /* Ensures the image spans the full height */
+  object-fit: cover; /* Maintains the aspect ratio and covers the entire container */
+  filter: brightness(
+    60%
+  ); /* Applies a darker overlay to match the Hero component */
+  display: block; /* Removes any extra space around the image */
+}
+
+.formatedde-hero-text p {
+  font-size: 1.3rem;
+  color: white;
+  padding: 0.5rem 0.2rem 0;
+}
+
+.formatedde-hero-text .show {
+  text-decoration: none;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #222;
+  position: relative;
+  top: 30px;
+}
+
+.formatedde-hero-text .hide {
+  display: none;
+}
+
+@media screen and (max-width: 555px) {
+  .formatedde-hero-text h1 {
+    padding: 10px 20px;
+  }
+
+  .formatedde-hero-text p {
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .formatedde-hero-text .show {
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+}
+
+.formatedde-about-details {
+  padding: 2rem;
+  background: #ffffff;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.formatedde-about-container {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the container horizontally */
+  text-align: left; /* Aligns content to the left */
+}
+
+.formatedde-about-container h2 {
+  font-size: 2rem;
+  color: #302ce9; /* Vibrant heading color */
+  margin-bottom: 1rem;
+  border-left: 4px solid #302ce9; /* Aesthetic left border for headings */
+  padding-left: 1rem;
+}
+
+.formatedde-about-container p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #555; /* Softer color for text */
+}
+
+.formatedde-about-container ul {
+  margin-left: 1.5rem; /* Indentation for bullet points */
+  margin-bottom: 1.5rem;
+  padding-left: 0.5rem;
+  list-style: none; /* Removes default bullets */
+}
+
+.formatedde-about-container ul li {
+  position: relative;
+  padding-left: 1.5rem; /* Space for custom bullet */
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.formatedde-about-container ul li::before {
+  content: '•'; /* Custom bullet */
+  position: absolute;
+  left: 0;
+  color: #302ce9; /* Matches the heading color */
+  font-size: 1.2rem;
+}
+
+.formatedde-about-container strong {
+  color: #302ce9;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .formatedde-about-container {
+    padding: 1rem;
+  }
+
+  .formatedde-about-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .formatedde-about-container p {
+    font-size: 0.9rem;
+  }
+
+  .formatedde-about-container ul li {
+    font-size: 0.9rem;
+  }
+}
